@@ -1,0 +1,23 @@
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+
+// Bootstrap 4 Queries Width
+
+$se-small : '(max-width: 320px)';
+$e-small : '(max-width: 575px)';
+$small: '(max-width: 767px)';
+$medium: '(max-width: 991px)';
+$large: '(max-width: 1199px)';
+$e-large: '(min-width: 1200px)';
+
+// Mixin for Adaptive
+
+@mixin media($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}

@@ -1,0 +1,84 @@
+.main-header {
+  &__phone {
+    font-size: rem(11);
+    a {
+      color: $white;
+      display: flex;
+      align-items: center;
+      font-family: $bold;
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-right: rem(8);
+      fill: $white;
+    }
+  }
+  &__top {
+    background-color: $red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+  &__bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .nav-social {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end;
+      &__link {
+        padding: 10px;
+        display: flex;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .navbar-brand {
+      font-family: $bold;
+      text-transform: uppercase;
+      font-size: rem(32);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: rem(80);
+      svg {
+        width: 35px;
+        height: 35px;
+        display: block;
+        margin-right: rem(10);
+      }
+    }
+    .navbar-collapse {
+      width: 100%;
+      .navbar-nav {
+        .nav-item {
+          font-family: $reg;
+          transition: .2s color linear;
+          &.active {
+            .nav-link {
+              color: $red;
+              font-family: $bold;
+            }
+          }
+        }
+        .nav-link {
+          padding: 8px;
+          margin-right: rem(17);
+          display: block;
+          border-bottom: 3px solid transparent;
+          transition: .2s border-color linear;
+          &:hover {
+            border-bottom: 3px solid $red;
+          }
+          &.dropdown-toggle::after {
+            vertical-align: 2px;
+          }
+        }
+      }
+    }
+  }
+}

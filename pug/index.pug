@@ -1,0 +1,27 @@
+- var page = 'resume';
+- var moduleArray = ['home','module-tests'];
+
+doctype html
+html(lang='en')
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='theme-color', content='#c14f40')
+        link(rel='apple-touch-icon', sizes='180x180', href='/img/favicon/apple-touch-icon.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='/img/favicon/favicon-16x16.png')
+        link(rel='shortcut icon', href='/img/favicon/favicon.ico', type='image/x-icon')
+        link(rel='manifest', href='/img/favicon/manifest.json')
+
+        title Web Portfolio - Dzerkachou Mikita
+        link(rel='stylesheet', href='/css/main.css')
+    body
+        .app-layout
+            include components/header.pug
+
+            if page='home'
+                include pages/home.pug
+            //if page='resume'
+            //    include pages/resume.pug
+
+            include components/footer.pug
+            include components/scripts.pug

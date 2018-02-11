@@ -1,0 +1,11 @@
+.app-layout {
+  width: 100%;
+  min-height: 100vh;
+  //background-color: #fafafa - 12%;
+  background-image: linear-gradient(to top, #fafafa 0%, white 100%);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: rem(320);
+}
