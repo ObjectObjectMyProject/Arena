@@ -1,18 +1,38 @@
+- var userLoginIn = false;
+
 header.main-header
     .main-header__top
         .container
-            .row
-                .col-lg-6.col-md-12
-                    .main-header__phone
-                        a(href='tel:233020002')
-                            include ../../img/svg/call-answer.svg
-                            span 8 (017) 650-32-43
+            .row.align-items-center
+                .col-lg-6.col-md-6.col-sm-12
+                    .main-header__top-left
+                        .main-header__phone
+                            a(href='tel:233020002')
+                                include ../../img/svg/call-answer.svg
+                                span 8 (017) 650-32-43
+                        .main-header__mail
+                            a(href='mailto:arena-gym@product.com')
+                                include ../../img/svg/message.svg
+                                span arena-gym@product.com
+                .col-lg-6.col-md-6.col-sm-12
+                    .main-header__loginIn
+                        if !userLoginIn
+                            button(data-toggle="modal", data-target="#loginModal") Войти
+                            a(href='#', class='main-header__registration', data-toggle="modal", data-target="#loginModal") Зарегистрироваться
+                        else
+                            a(class="main-header__link", href="#")
+                                include ../../img/svg/user.svg
+                                span AlexFitness
+                            span.main-header__link-exit Выход
+
+
     .main-header__bottom
         .container
             nav.navbar.navbar-expand-lg.navbar-light
                 a.navbar-brand(href='#')
                     include ../../img/svg/sports-arena.svg
                     | арена
+                    span фитнес клуб
                 button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarSupportedContent.collapse.navbar-collapse

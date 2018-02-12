@@ -1,246 +1,38 @@
 .home {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  position: relative;
-  flex-grow: 1;
-  &-carousel {
-    height: 400px;
-    @include media($medium){
-      height: 600px;
-      display: flex;
-      align-items: center;
-    }
-    .slick-slide, .slick-slide *{ outline: none !important; }
-
-    .slick-prev {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    &__container {
-      width: 100%;
-      position: relative;
-    }
-    &__controll {
-      display: flex;
-      justify-content: center;
-      &-prev {
-        position: absolute;
-        left: 40px;
-        top: 0;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        @include media($e-small){
-            left: 0;
-            padding: 0 rem(2);
-            background-color: #ededed;
-            cursor: pointer;
-        }
-        @include media($se-small){
-          bottom: 0;
-          height: 50px;
-          width: 50%;
-          justify-content: center;
-          background-color: #ededed;
-          cursor: pointer;
-          top: auto;
-          padding: 0;
-        }
-        svg {
-          width: 25px;
-          height: 25px;
-          cursor: pointer;
-          fill: $black;
-          transition: fill .2s linear;
-          @include media($medium){
-            width: 35px;
-            height: 35px;
-          }
-          @include media($e-small){
-            width: 25px;
-            height: 25px;
-            fill: $black;
-          }
-          &:hover {
-            fill: $red;
-          }
-        }
-      }
-      &-next {
-        position: absolute;
-        right: 40px;
-        top: 0;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        @include media($e-small){
-          right: 0;
-          padding: 0 rem(2);
-          background-color: #ededed;
-          cursor: pointer;
-        }
-        @include media($se-small){
-          bottom: 0;
-          height: 50px;
-          width: 50%;
-          justify-content: center;
-          background-color: #ededed;
-          cursor: pointer;
-          max-width: 14.625rem;
-          top: auto;
-          border-left: 1px solid rgba(33, 33, 33, 0.1);
-          padding: 0;
-        }
-        svg {
-          width: 25px;
-          height: 25px;
-          cursor: pointer;
-          fill: $black;
-          transition: fill .2s linear;
-          @include media($medium){
-            width: 35px;
-            height: 35px;
-          }
-          @include media($e-small){
-            width: 25px;
-            height: 25px;
-          }
-          &:hover {
-            fill: $red;
-          }
-        }
-      }
-    }
-    &__item {
-      width: rem(400);
-      height: 400px;
-      background-color: $orange;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+  &-jumbotron {
+    padding-top: 5em;
+    padding-bottom: 10em;
+    h1 {
+      font-family: $bold;
       @include media($medium){
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 0px;
-        padding: 20px 0;
-        background-color: transparent;
+        font-size: rem(45);
       }
-      &::after {
-        content: '';
+    }
+    p {
+      font-family: $reg;
+    }
+    .btn.btn-primary {
+      background-color: $red;
+      display: inline-flex;
+      align-items: center;
+      outline: none;
+      border-color: $red - 10%;
+      border-width: 2px;
+      margin-top: 10px;
+      &:hover {
+        background-color: $red + 20%;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: #FFCA28;
+      }
+      span {
+        font-size: rem(18);
         display: block;
-        width: 100%;
-        height: 100%;
-        background-color: $orange + 10%;
-        position: absolute;
-        border-radius: 50%;
-        z-index: -1;
-        //animation: infinite homeItemCircle 3s;
-        @include media($medium){
-          content: '';
-          display: block;
-          width: 200px;
-          height: 200px;
-          background-color: #ff5a2d;
-          position: absolute;
-          top: 44px;
-          border-radius: 50%;
-          z-index: -1;
-        }
-        @include media($e-small){
-          width: 153px;
-          height: 140px
-        }
-        @include media($se-small){
-          width: 160px;
-          height: 145px;
-        }
-      }
-
-      &-img {
-        width: 400px;
-        height: 400px;
-        @include media($medium){
-          width: rem(230);
-          height: rem(230);
-        }
-        @include media($e-small){
-          width: rem(180);
-          height: rem(180);
-        }
-      }
-
-      &-descr {
-        position: absolute;
-        left: -100px;
-        top: 65px;
-        @include media($medium){
-          position: static;
-        }
-        h4 {
-          font-family: $bold;
-          font-size: rem(40);
-          color: $black;
-          padding-bottom: 3px;
-          max-width: rem(228);
-          margin-bottom: 5px;
-          @include media($medium){
-            font-size: rem(60);
-            margin-top: 10px;
-            margin-bottom: 10px;
-            max-width: rem(350);
-          }
-          @include media($e-small){
-            font-size: rem(42);
-            margin-top: 20px;
-          }
-        }
-        p {
-          color: $black;
-          font-size: rem(18);
-          font-family: $reg;
-          padding-bottom: 15px;
-          max-width: rem(175);
-          line-height: 23px;
-          @include media($medium){
-            font-size: rem(24);
-            max-width: rem(250);
-            line-height: 26px;
-          }
-        }
-        button {
-          background-color: transparent;
-          border: none;
-          outline: none;
-          font-family: $reg;
-          font-size: rem(16);
-          cursor: pointer;
-          display: block;
-          text-decoration: underline;
-          @include media($medium){
-            text-align: center;
-            font-size: rem(20);
-          }
-        }
+        margin-left: rem(5);
       }
     }
   }
-}
 
-.home-carousel .home-carousel__item-container {
-  display: none;
-}
-.home-carousel .home-carousel__item-container:first-child {
-  display: block;
-}
-.home-carousel.slick-initialized .home-carousel__item-container {
-  display: block;
 }
