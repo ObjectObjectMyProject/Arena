@@ -9,10 +9,15 @@
                 form
                     .form-group
                         label(for='modal-login') Email address
-                        input#modal-login.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                        input#modal-login.form-control.is-valid(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                        .valid-feedback
+                            | Looks good!
+
                     .form-group
                         label(for='modal-password') Password
-                        input#modal-password.form-control(type='password', placeholder='Password')
+                        input#modal-password.form-control.is-invalid(type='password', placeholder='Password')
+                        .invalid-feedback
+                            | Please choose a username.
+
             .modal-footer
-                button.btn.btn-secondary(type='button', data-dismiss='modal') Закрыть
                 button.btn.btn-primary(type='button') Войти
