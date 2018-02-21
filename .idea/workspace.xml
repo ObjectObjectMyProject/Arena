@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="571e923a-be34-49d8-a566-b99c96677d53" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/components/loginModal.pug" afterPath="$PROJECT_DIR$/pug/components/loginModal.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/pages/home.pug" afterPath="$PROJECT_DIR$/pug/pages/home.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_layout.scss" afterPath="$PROJECT_DIR$/scss/layout/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/pages/_home.scss" afterPath="$PROJECT_DIR$/scss/pages/_home.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,8 +72,8 @@
           <file leaf-file-name="loginModal.pug" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pug/components/loginModal.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -396,7 +391,7 @@
       <updated>1518317681997</updated>
       <workItem from="1518317683300" duration="21358000" />
       <workItem from="1519039894801" duration="1652000" />
-      <workItem from="1519172900535" duration="3803000" />
+      <workItem from="1519172900535" duration="3836000" />
     </task>
     <task id="LOCAL-00001" summary="Hello">
       <created>1518325303284</created>
@@ -426,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519176162571</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add catalog on homepage #fix1">
+      <created>1519176719673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519176719673</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26813000" />
+    <option name="totallyTimeSpent" value="26846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
@@ -493,7 +495,8 @@
     <MESSAGE value="Init project" />
     <MESSAGE value="Header and Jumbotron push" />
     <MESSAGE value="Add catalog on homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add catalog on homepage" />
+    <MESSAGE value="Add catalog on homepage #fix1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add catalog on homepage #fix1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -758,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pug/components/loginModal.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
