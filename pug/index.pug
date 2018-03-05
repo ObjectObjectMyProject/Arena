@@ -1,4 +1,4 @@
-- var page = 'resume';
+- var page = 'articles';
 - var moduleArray = ['home','module-tests'];
 
 doctype html
@@ -18,8 +18,10 @@ html(lang='en')
         .app-layout
             include components/header.pug
 
-            if page='home'
-                include pages/home.pug
+            //if page='home'
+            //    include pages/home.pug
+            if page = 'articles'
+                include pages/articles.pug
             //if page='resume'
             //    include pages/resume.pug
 
