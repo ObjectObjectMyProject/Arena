@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="571e923a-be34-49d8-a566-b99c96677d53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pug/pages/articles.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/pages/_articles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/components/footer.pug" afterPath="$PROJECT_DIR$/pug/components/footer.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/components/header.pug" afterPath="$PROJECT_DIR$/pug/components/header.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/index.pug" afterPath="$PROJECT_DIR$/pug/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_footer.scss" afterPath="$PROJECT_DIR$/scss/components/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/pages/articles.pug" afterPath="$PROJECT_DIR$/pug/pages/articles.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/pages/_articles.scss" afterPath="$PROJECT_DIR$/scss/pages/_articles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +18,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4307049">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
@@ -69,8 +64,38 @@
           <file leaf-file-name="_articles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/pages/_articles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+                <state relative-caret-position="397">
+                  <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pug/components/header.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="151">
+                  <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="58" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="store-new-badges.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/svg/store-new-badges.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fire.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/svg/fire.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -103,8 +128,8 @@
           <file leaf-file-name="articles.pug" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pug/pages/articles.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="80" lean-forward="false" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
                   <folding />
                 </state>
               </provider>
@@ -148,6 +173,8 @@
         <option value="$PROJECT_DIR$/scss/main.scss" />
         <option value="$PROJECT_DIR$/pug/index.pug" />
         <option value="$PROJECT_DIR$/pug/components/header.pug" />
+        <option value="$PROJECT_DIR$/img/svg/store-new-badges.svg" />
+        <option value="$PROJECT_DIR$/img/svg/fire.svg" />
         <option value="$PROJECT_DIR$/pug/pages/articles.pug" />
         <option value="$PROJECT_DIR$/scss/pages/_articles.scss" />
       </list>
@@ -339,6 +366,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="svg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -468,7 +527,7 @@
       <workItem from="1519182292765" duration="44000" />
       <workItem from="1519779933730" duration="618000" />
       <workItem from="1520239957919" duration="45000" />
-      <workItem from="1520287073675" duration="3957000" />
+      <workItem from="1520287073675" duration="5046000" />
     </task>
     <task id="LOCAL-00001" summary="Hello">
       <created>1518325303284</created>
@@ -519,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519176767160</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add article page">
+      <created>1520291057411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520291057411</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31541000" />
+    <option name="totallyTimeSpent" value="32630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
@@ -588,15 +654,14 @@
     <MESSAGE value="Add catalog on homepage" />
     <MESSAGE value="Add catalog on homepage #fix1" />
     <MESSAGE value="Add catalog on homepage #fix2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add catalog on homepage #fix2" />
+    <MESSAGE value="Add article page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add article page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/libs/bootstrap/_badge.scss" />
-    <entry file="file://$PROJECT_DIR$/scss/libs/bootstrap/_alert.scss" />
     <entry file="file://$PROJECT_DIR$/scss/libs/bootstrap/_media.scss" />
     <entry file="file://$PROJECT_DIR$/scss/libs/bootstrap/_grid.scss" />
     <entry file="file://$PROJECT_DIR$/scss/libs/bootstrap/mixins/_grid-framework.scss" />
@@ -809,26 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pug/components/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="56" column="55" lean-forward="false" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pug/pages/home.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="61" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pug/pages/articles.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -857,10 +906,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/store-new-badges.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/fire.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pug/components/header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pug/pages/articles.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="80" lean-forward="false" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/pages/_articles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="397">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding />
         </state>
       </provider>
