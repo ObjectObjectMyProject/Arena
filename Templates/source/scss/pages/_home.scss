@@ -1,0 +1,139 @@
+.home {
+  &-trainers {
+    padding-top: 60px;
+    &__title {
+      margin-bottom: 32px;
+    }
+    &__container {
+      margin-bottom: 52px;
+    }
+    .slick-dots {
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+      li:not(:last-child) {
+        margin-right: rem(16);
+      }
+      button {
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: $red;
+      }
+    }
+
+    &__item {
+      outline: none;
+      .card {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      &-img {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+  &-catalog {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    &__title {
+      padding-top: 60px;
+    }
+    &__item {
+      margin-right: 5px;
+      cursor: pointer;
+      outline: none;
+      &:focus, &:active {
+        outline: none;
+      }
+      &:hover {
+        .card {
+          border-color: $red;
+        }
+      }
+      .card {
+        outline: none;
+        transition: .20s all linear;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a.btn {
+          background-color: $red;
+          outline: none;
+          border-color: $red;
+          box-shadow: $red;
+          color: $white;
+          &:focus {
+            border-color: $red + 40%;
+            box-shadow: 0 0 0 0.2rem rgb(239, 98, 89);
+          }
+          &:active {
+            box-shadow: 0 0 0 0.2rem $red+20%;
+          }
+        }
+
+      }
+      display: flex;
+      &-img {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        svg {
+          width: 40px;
+          height: 40px;
+          @include media($medium){
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+  &-jumbotron {
+    padding-top: 5em;
+    padding-bottom: 10em;
+    h1 {
+      font-family: $bold;
+      @include media($medium){
+        font-size: rem(45);
+      }
+    }
+    p {
+      font-family: $reg;
+    }
+    .btn.btn-primary {
+      background-color: $red;
+      display: inline-flex;
+      align-items: center;
+      outline: none;
+      border-color: $red - 10%;
+      border-width: 2px;
+      margin-top: 10px;
+      &:hover {
+        background-color: $red + 20%;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: #FFCA28;
+      }
+      span {
+        font-size: rem(18);
+        display: block;
+        margin-left: rem(5);
+      }
+    }
+  }
+
+}

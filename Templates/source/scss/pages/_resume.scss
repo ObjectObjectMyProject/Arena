@@ -1,0 +1,96 @@
+.resume {
+  padding: 0 rem(40);
+  @include media($e-small){
+    padding: 0 rem(20);
+  }
+
+  &__header {
+    display: flex;
+    padding-top: 125px;
+    @include media($medium){
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    &-descr {
+      margin-top: 20px;
+      @include media($medium){
+        margin-top: 8px;
+      }
+
+      p {
+        font-family: $reg;
+        font-size: rem(22);
+        line-height: rem(32);
+
+        @include media($e-small){
+
+        }
+
+        span {
+          margin-left: 4px;
+          margin-right: 4px;
+          font-family: $bold;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-greeting {
+      @include media($medium){
+        margin-bottom: 35px;
+      }
+      h1 {
+        font-size: rem(110);
+        font-family: $bold;
+        @include media($medium){
+          font-size: rem(100);
+        }
+        @include media($e-small){
+          font-size: rem(70);
+        }
+      }
+      span {
+        display: inline-flex;
+        margin-left: rem(15);
+        color: $red;
+      }
+    }
+
+    &-contact {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-items: center;
+      @include media($medium){
+        justify-content: flex-start;
+        background-color: $white;
+        padding: 15px rem(15);
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+          margin-bottom: 15px;
+        }
+        span {
+          width: 30px;
+          height: 30px;
+          fill: $red;
+        }
+
+        strong {
+          font-family: $bold;
+          display: block;
+          margin-left: rem(10);
+          font-size: rem(16);
+        }
+
+      }
+
+    }
+
+
+  }
+}

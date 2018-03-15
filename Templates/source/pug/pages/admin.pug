@@ -1,0 +1,36 @@
+- var page = 'article';
+
+section.admin
+    .container
+        .row
+            h2 Панель администратора
+        .row
+            section.admin-items
+                figure.admin-item
+                    .admin-item__img
+                        include ../../img/svg/edit.svg
+                    figcaption.admin-item__text
+                        h5 Удаление / Добавление Статей
+        if page === 'article'
+            section.admin-article
+                form
+                    .form-group
+                        label(for='exampleFormControlInput1') Заголовок
+                        input#exampleFormControlInput1.form-control( placeholder='Напишите заголовок...')
+                    .form-group
+                        label(for='exampleFormControlTextarea1') Текст статьи
+                        textarea#exampleFormControlTextarea1.form-control(rows='3')
+                    .form-check
+                        input#gridRadios1.form-check-input(type='radio', name='gridRadios', value='option1', checked='')
+                        label.form-check-label(for='gridRadios1')
+                            | Новинка
+                    .form-check
+                        input#gridRadios2.form-check-input(type='radio', name='gridRadios', value='option2')
+                        label.form-check-label(for='gridRadios2')
+                            | Hot!
+                    .custom-file
+                        input#validatedCustomFile.custom-file-input(type='file', required='')
+                        label.custom-file-label(for='validatedCustomFile') Выберите картинку статьи
+                        .invalid-feedback Example invalid custom file feedback
+                    button.btn.btn-primary.mb-2(type='submit') Добавить статью
+

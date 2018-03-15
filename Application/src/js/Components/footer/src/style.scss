@@ -1,0 +1,56 @@
+@import "../../../../../../Templates/source/scss/webpack-global-styles.scss";
+
+.mail {
+  background-color: $red;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-form {
+    display: flex;
+    justify-content: center;
+    input {
+      width: 50%;
+      height: 40px;
+      padding-left: rem(10);
+      font-family: $bold;
+      color: $black;
+      outline: none;
+    }
+    button {
+      background-color: $black;
+      color: $white;
+      font-family: $reg;
+      border: 4px solid $black;
+      outline: none;
+    }
+  }
+}
+
+.footer-main {
+  background-color: $black;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  &__date {
+    color: $white;
+    font-family: $bold;
+  }
+  &__social {
+    .nav-social {
+      display: flex;
+      align-items: center;
+      &__link {
+        margin-left: rem(15);
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: $white;
+        }
+      }
+    }
+  }
+}

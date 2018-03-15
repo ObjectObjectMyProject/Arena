@@ -1,0 +1,200 @@
+.main-header {
+  &__link {
+    font-family: $bold;
+    font-size: rem(14);
+    color: $white;
+    margin-right: rem(20);
+    display: flex;
+    align-items: inherit;
+    position: relative;
+    &::after {
+      content: '';
+      height: 50%;
+      width: 1px;
+      background-color: $white;
+      position: absolute;
+      right: -9px;
+      top: 34%;
+    }
+    &-exit {
+      color: $white;
+      font-family: $reg;
+      font-size: rem(12);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-right: rem(6);
+      fill: $white;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  &__registration {
+    margin-left: rem(20);
+    font-family: $bold;
+    font-size: rem(12);
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      color: $white;
+    }
+  }
+  &__loginIn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    @include media($medium){
+      justify-content: center;
+      padding-top: 15px;
+    }
+    button {
+      cursor: pointer;
+      background-color: $green;
+      border: none;
+      border-bottom: 3px solid #43A047;
+      border-radius: 4px;
+      font-family: $bold;
+      color: $white;
+      font-size: rem(15);
+      padding: 4px rem(8);
+      transition: all linear .2s;
+      outline: none;
+      &:hover {
+        border-bottom: 3px solid transparent;
+        transform: translateY(2px);
+      }
+    }
+  }
+  &__phone, &__mail {
+    font-size: rem(11);
+    display: inline-flex;
+    &:not(:last-child) {
+      margin-right: rem(30);
+    }
+    a {
+      color: $white;
+      display: flex;
+      align-items: center;
+      font-family: $bold;
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-right: rem(8);
+      fill: $white;
+    }
+  }
+  &__top {
+    background-color: $red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &-left {
+      @include media($medium){
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .nav-social {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end;
+      @include media($large){
+        flex-grow: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      &__link {
+        padding: 10px;
+        display: flex;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .navbar-brand {
+      font-family: $bold;
+      text-transform: uppercase;
+      font-size: rem(32);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: rem(80);
+      position: relative;
+      span {
+        position: absolute;
+        bottom: -2px;
+        right: 29px;
+        font-size: 11px;
+        font-family: $bold;
+        color: #e53935;
+      }
+      svg {
+        width: 35px;
+        height: 35px;
+        display: block;
+        margin-right: rem(10);
+      }
+    }
+    .navbar-toggler {
+      border-width: 2px;
+      outline: none;
+    }
+    .navbar-collapse {
+      width: 100%;
+      @include media($large){
+        margin-top: 30px;
+        background-color: $white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .navbar-nav {
+        .nav-item {
+          font-family: $reg;
+          transition: .2s color linear;
+          @include media($large){
+            text-align: center;
+            margin-right: 0;
+          }
+          .nav-link.router-link-exact-active.router-link-active {
+            color: $red;
+            font-family: $bold;
+          }
+        }
+        .nav-link {
+          padding: 8px;
+          margin-right: rem(17);
+          display: block;
+          border-bottom: 3px solid transparent;
+          transition: .2s border-color linear;
+          @include media($large){
+            border-bottom: none;
+            margin-right: 0;
+          }
+          &:hover {
+            border-bottom: 3px solid $red;
+            @include media($large){
+              border-bottom: none;
+            }
+          }
+          &.dropdown-toggle::after {
+            vertical-align: 2px;
+            position: relative;
+            left: 1px;
+          }
+        }
+      }
+    }
+  }
+}

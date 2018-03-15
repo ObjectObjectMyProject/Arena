@@ -1,0 +1,36 @@
+#loginModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h5#exampleModalLabel.modal-title Вход
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+            .modal-body
+                form
+                    .form-group
+                        label(for='modal-login') Логин:
+                        input#modal-login.form-control( @blur='checkName', v-model='loginName.text',  type='text', aria-describedby='emailHelp', placeholder='Введите ваш логин')
+                        .valid-feedback
+                            | Правильно!
+                        .invalid-feedback
+                            | Неправильный логин
+                    .form-group
+                        label(for='modal-paasword') Пароль:
+                        input#modal-paasword.form-control.is-valid( type='password', aria-describedby='emailHelp')
+                        .valid-feedback
+                            | Looks good!
+                        .invalid-feedback
+                            | Please choose a username.
+                    //.form-group
+                    //    label(for='modal-login') Email address
+                    //    input#modal-login.form-control.is-valid(v-model='name', type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                    //    .valid-feedback
+                    //        | Looks good!
+                    //
+                    //.form-group
+                    //    label(for='modal-password') Password
+                    //    input#modal-password.form-control.is-invalid(type='password', placeholder='Password')
+                    //    .invalid-feedback
+                    //        | Please choose a username.
+            .modal-footer
+                button.btn.btn-primary(type='button') Войти

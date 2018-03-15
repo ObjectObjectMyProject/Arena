@@ -1,0 +1,63 @@
+- var userLoginIn = false;
+
+header.main-header
+    .main-header__top
+        .container
+            .row.align-items-center
+                .col-lg-6.col-md-6.col-sm-12
+                    .main-header__top-left
+                        .main-header__phone
+                            a(href='tel:233020002')
+                                include ../../../../img/svg/call-answer.svg
+                                span 8 (017) 650-32-43
+                        .main-header__mail
+                            a(href='mailto:arena-gym@product.com')
+                                include ../../../../img/svg/message.svg
+                                span arena-gym@product.com
+                .col-lg-6.col-md-6.col-sm-12
+                    .main-header__loginIn
+                        if !userLoginIn
+                            button(data-toggle="modal", data-target="#loginModal") Войти
+                            a(href='#', class='main-header__registration', data-toggle="modal", data-target="#registerModal") Зарегистрироваться
+                        else
+                            a(class="main-header__link", href="#")
+                                include ../../../../img/svg/user.svg
+                                span AlexFitness
+                            span.main-header__link-exit Выход
+
+
+    .main-header__bottom
+        .container
+            nav.navbar.navbar-expand-lg.navbar-light
+                a.navbar-brand(href='#')
+                    include ../../../../img/svg/sports-arena.svg
+                    | арена
+                    span фитнес клуб
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav
+                        li.nav-item.active
+                            router-link(to='/', class='nav-link') Главная
+                                span.sr-only (current)
+                        li.nav-item
+                            a.nav-link(href='#') Цены
+                        li.nav-item
+                            router-link(to='/articles', class='nav-link') Статьи
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | Каталог
+                            .dropdown-menu(aria-labelledby='navbarDropdown')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                .dropdown-divider
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item
+                            a.nav-link(href='#') Статьи
+                    .nav-social
+                        a(href="#", class="nav-social__link")
+                            include ../../../../img/svg/vk.svg
+                        a(href="#", class="nav-social__link")
+                            include ../../../../img/svg/instagram.svg
+                        a(href="#", class="nav-social__link")
+                            include ../../../../img/svg/youtube.svg

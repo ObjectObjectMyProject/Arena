@@ -1,0 +1,11 @@
+.pagination-main {
+  padding: 20px 0;
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .page-link {
+    font-family: $reg;
+    color: $black;
+  }
+}
